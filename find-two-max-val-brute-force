@@ -1,9 +1,9 @@
-var a = [5,8,1,15,7,3,28];
+var a = [9,8,1,15,7,3,28];
 let maxNum = a[0];
 let maxNum2 = a[1]
 
 for(var i = 2;i < a.length; i++){
-  if((maxNum < maxNum2) && (maxNum < a[i]) && (maxNum2 < a[i])){
+  if((maxNum < a[i]) && (maxNum2 < a[i])){
    maxNum = maxNum2;
    maxNum2 = a[i];
   } 
