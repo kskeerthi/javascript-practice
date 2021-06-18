@@ -1,0 +1,9 @@
+var a = [5,8,1,15,7,3];
+let maxNum = a[0];
+
+for(var i = 1;i < a.length; i++){
+  if(maxNum < a[i]){
+    maxNum = a[i]
+  }
+}
+console.log(maxNum)
