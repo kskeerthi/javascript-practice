@@ -1,0 +1,20 @@
+var a = [10,11,1,0,8,7,12,21,9,3,2];
+console.log(a);
+
+for(var i = 0; i<a.length; i++){
+  for(var j = 1; j<a.length;j++){
+    if(a[j-1]>a[j]){
+      change(a,j-1,j);
+    }
+  }
+  
+}
+function change(arr,prev,next) {
+  let temp = arr[prev];
+  arr[prev] = arr[next];
+  arr[next] = temp;
+  return arr;
+}
+console.log(a)
+
+/* Brute force Approach for sorting */ - bubble sorting
