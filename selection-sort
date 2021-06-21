@@ -1,0 +1,10 @@
+var arr = [5,8,1,21,13,11];
+var temp = arr[0];
+for(var i = 0;i<arr.length;i++){
+  for(var j = i+1; j<arr.length;j++){
+    if(arr[j] < arr[i]){
+   [ arr[i], arr[j] ] = [ arr[j], arr[i] ];
+ }
+  }
+}
+console.log(arr);
