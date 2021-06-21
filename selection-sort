@@ -8,3 +8,4 @@ for(var i = 0;i<arr.length;i++){
   }
 }
 console.log(arr);
+//definitely it will take n-1 times for the above program to sort and place larger or smaller number of an array in whichever the order it is
