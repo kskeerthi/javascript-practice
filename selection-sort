@@ -11,3 +11,5 @@ console.log(arr);
 //definitely it will take n-1 times for the above program to sort and place larger or smaller number of an array in whichever the order it is
 //if we have to find top 4 largest numbers in array, we iterate the array and sort the largest 'k' element and place them in certain order in array, even there can be best optimized 
 //algo In every new iteration we will be adding new element to the sorted set -- > whole idea of selection sort. With k =4, 4*(n-1) times i.e., for four iterations
+
+//n^2 complexity for the above problem
