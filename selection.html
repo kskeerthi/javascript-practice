@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="selection.css" />
+<script src="selection.js"></script>
+
+<body>
+  <h1>Selection Sort</h1>
+
+  <div id="geeks"></div>
+  <button onclick="GFG()">Click</button>
+  <script>
+    var Geeks = [5, 8, 1, 15, 7, 6, 2];
+    var node;
+    var divnode;
+    var textnode;
+
+    function addNodes(geeks) {
+      for (var i = 0; i < geeks.length; i++) {
+        node = document.createElement("DIV");
+        divnode = document.createElement("DIV");
+        textnode = document.createTextNode(geeks[i]);
+        node.className += "blocks";
+        divnode.className += "number-blocks";
+        node.appendChild(divnode);
+        divnode.appendChild(textnode);
+        document.getElementById("geeks").appendChild(node);
+      }
+    }
+    addNodes(Geeks);
+
+    function GFG() {
+      var docChild = document.getElementById("geeks")
+      docChild.innerHTML = "";
+      selectSort(Geeks);
+    }
+    function selectSort(geekval) {
+      var temp = geekval[0];
+      for (var i = 0; i < geekval.length; i++) {
+        for (var j = i + 1; j < geekval.length; j++) {
+          if (geekval[j] < geekval[i]) {
+            [geekval[i], geekval[j]] = [geekval[j], geekval[i]];
+          }
+        }
+      }
+      addNodes(geekval);
+    }
+  </script>
+</body>
+
+</html>
